@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# IntelliJ project files
+*.iml
+*.iws
+*.ipr
+.idea/
