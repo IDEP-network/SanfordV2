@@ -1,4 +1,6 @@
-# Incentivized-testnet Sanford V2
+<h1><p align="center"><img alt="Banner" src="SanfordV2.png" /></p></h1>
+
+<h1 align="Incentivized Network Sanford V2">HAL9001</h1>
 
 # Requirements #
 * Latest Version of Ubuntu
