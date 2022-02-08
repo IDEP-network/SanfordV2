@@ -21,7 +21,7 @@ git clone https://github.com/IDEP-network/SanfordV2.git
 
 - Move/Copy the binary to /usr/local/bin/
 ```
-sudo cp incentivized-testnet/binary/iond /usr/local/bin/
+sudo cp SanfordV2/iond /usr/local/bin/
 ```
 
 - Add permissions to the binary
