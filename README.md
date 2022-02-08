@@ -70,3 +70,47 @@ wget https://raw.githubusercontent.com/IDEP-network/SanfordV2/main/genesis.json
 iond start
 ```
 
+### Validator-Setup
+
+- To get your Public Address
+```
+iond keys list
+```
+- Create a Validator
+
+Before you can create your Validator, your node has to be synced up to the latest block of the chain. You can check this by:
+
+```
+iond status
+```
+If `catching_up` is `false` you are good to execute:
+
+```
+iond tx staking create-validator \
+    --amount 10000000000idep \
+    --commission-max-change-rate 0.01 \
+    --commission-max-rate 0.2 \
+    --commission-rate 0.1 \
+    --from <YourWalletAddress> \
+    --min-self-delegation 1 \
+    --moniker <YourMoniker> \
+    --pubkey $(iond tendermint show-validator) \
+    --chain-id SanfordV2
+```
+
+
+
+### FAQ
+#### Example of a command to create a Validator
+```
+iond tx staking create-validator --amount 15000000000000idep --from idep1d2nqcwf9zz9fx7xlesyt0gc3utfxe2mk6nfwey --pubkey idepvalconspub1zcjduepqztw5yzm5wj0yc600aaemxlmda5488jv9hycxfnta3w7vz9jgpawqc9qnhs --commission-rate 0.01 --commission-max-rate 0.05 --commission-max-change-rate 0.005 --min-self-delegation 1 --chain-id SanfordV2
+```
+
+#### To know more about the commands and other parameters
+```
+iond tx staking create-validator --help
+```
+#### Tendermint API Documentation
+https://v1.cosmos.network/rpc/v0.41.4
+
+**Note:** IDEP Token has 8 decimal places. If you wish to run a validator with 100,000 tokens you must set the ammount to --ammount 10000000000000
