@@ -98,7 +98,10 @@ iond tx staking create-validator \
     --chain-id SanfordV2
 ```
 
-
+### Seeds
+```
+4f32b91384999069bdfdbc82b7725866f1c37cbb@142.93.121.105:26656
+```
 
 ### FAQ
 #### Example of a command to create a Validator
