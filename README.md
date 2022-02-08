@@ -2,7 +2,7 @@
 
 <h1 align="center">Incentivized Network Sanford V2.0</h1>
 
-# Requirements #
+## Requirements #
 * Latest Version of Ubuntu
 * 4 CPU Processor
 * 8-16 GB Ram
