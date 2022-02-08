@@ -61,7 +61,7 @@ iond keys add <accountname>
 cd ~/.ion/config/
 
 rm genesis.json
-wget https://raw.githubusercontent.com/IDEP-network/SanfordV2/main/genesis.json
+wget https://raw.githubusercontent.com/IDEP-network/SanfordV2/master/genesis.json
 ```
 
 ## Start Node
